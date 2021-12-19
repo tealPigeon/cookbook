@@ -1,0 +1,358 @@
+.title
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.017em;
+    color: #262435;
+    text-align:left;
+    margin-right: 70px;
+}
+
+.content
+{
+    margin: 90px 375px 0 375px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align:left;
+
+}
+
+.stars
+{
+    display: inline;
+    text-align:right;
+
+}
+
+.rating_title
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.017em;
+    color: #7E7C8F;
+}
+
+.description
+{
+    margin-top: 50px;
+    margin-bottom: 75px;
+    display: inline-block;
+}
+
+.image
+{
+    width: 47%;
+    height: 377px;
+    border-radius: 10px;
+    background-size:100% 100%;
+    float: left;
+    position: relative;
+}
+
+.short_description
+{
+    margin-left: 34px;
+    position: relative;
+    float: right;
+    width: 48%;
+    height: 100%;
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.017em;
+    color: #262435;
+}
+
+.calories
+{
+    position: absolute;
+    width: 221px;
+    height: 71px;
+    right: 0;
+    top: 270px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px 0px 0px 15px;
+    z-index: 2;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.calories_count
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.017em;
+    color: #262435;
+    margin: 10px;
+}
+
+.start_cooking
+{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.017em;
+    color: #7E7C8F;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.add_to_favorites
+{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.017em;
+    color: #7E7C8F;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.start_cooking .logo_image
+{
+    width: 40px;
+    height: 40px;
+    background-size:100% 100%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+
+.start_cooking .logo_text
+{
+    float: left;
+    padding-bottom: 5px;
+}
+
+.add_to_favorites .logo_image
+{
+    width: 40px;
+    height: 40px;
+    background-size:100% 100%;
+    float: right;
+    margin-left: 10px;
+}
+
+.add_to_favorites .logo_text
+{
+    float: left;
+    padding-bottom: 3px;
+}
+
+.portion
+{
+    width: 100%;
+}
+
+.ingredients
+{
+    width: 60%;
+    height: auto;
+    margin-top: 50px;
+    clear: both;
+    display: block;
+    /* background-color: blue; */
+}
+
+.portion_count
+{
+    text-align:right;
+    margin-left: 250px;
+}
+
+
+.leaders
+{
+    margin-left: 50px;
+}
+
+
+ul.leaders {
+    max-width: 70%;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+            "- - - - - - - - - - - - - - - - - - - - "
+            "- - - - - - - - - - - - - - - - - - - - "
+            "- - - - - - - - - - - - - - - - - - - - "
+            "- - - - - - - - - - - - - - - - - - - - "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white}
+
+
+.step_by_step_recipe
+{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    clear: both;
+    display: block;
+    /* background-color: blue; */
+}
+
+.step_image
+{
+    width: 40%;
+    height: 300px;
+    border-radius: 10px;
+    background-size:100% 100%;
+    float: left;
+    position: relative;
+}
+
+.step_count
+{
+    position: absolute;
+    width: 124px;
+    height: 60px;
+    right: 0;
+    top: 60%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px 0px 0px 15px;
+    z-index: 100;
+    text-align: center;
+    vertical-align: middle;
+
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.017em;
+
+    /* Blaak */
+    color: #262435;
+}
+
+.step_count p
+{margin: 10px;}
+
+
+
+.step_description
+{
+    margin-left: 20px;
+    position: relative;
+    float: right;
+    width: 55%;
+    height: 100%;
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.017em;
+
+    /* Blaak */
+
+    color: #262435;
+}
+
+
+.step
+{
+    height: 400px;
+}
+
+.start_cooking_button
+{
+    width: 279px;
+    height: 63px;
+    background: #CFD3A0;
+    border-radius: 15px;
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.017em;
+    border: 0;
+    color: #FFFFFF;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 150px;
+    cursor: pointer;}
+
+.sub_title
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.017em;
+    color: #262435;
+    margin: 50px auto 30px auto;
+}
+
+.portion_count
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.017em;
+
+    /* Colors/Dark */
+
+    color: #514F64;
+}
+
+.step_by_step_text
+{
+
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.017em;
+
+    margin-left: 10px;
+    color: #262435;
+}
+
+.short_recipe
+{
+margin: 0;
+}

@@ -1,0 +1,134 @@
+.hidden {
+    position: fixed;
+    display: inline-block;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.authorization_lightbox
+{
+    position: fixed;
+    width: 700px;
+    height: 396px;
+    left: 684px;
+    top: 154.25px;
+     background: #FFFFFF;
+    border-radius: 15px;
+    z-index: 12;
+    text-align: center;
+}
+
+.background_block
+{
+    position: fixed;
+
+    width: 700px;
+    height: 100px;
+    left: 684px;
+    top: 147px;
+    z-index: 11;
+    background: #CFD3A0;
+    border-radius: 15px;
+}
+
+.title {
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 44px;
+    /*display: flex;*/
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.017em;
+    color: #514F64;
+    margin: 38px auto 0 auto;
+}
+
+/*close {*/
+/*    position: absolute;*/
+
+/*    width: 32px;*/
+/*    height: 32px;*/
+/*    opacity: 0.3;*/
+/*}*/
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    top:23px;
+    right: 37px;
+    content: ' ';
+    height: 29px;
+    width: 2px;
+    background-color: #DBDBD6;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.text
+{
+    width: 564px;
+    height: 103px;
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.017em;
+text-align: left;
+margin: 10px auto 0 auto;
+    color: #262435;
+}
+
+.star
+{
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px auto 0 auto;
+}
+
+
+.d14 {
+    margin: 50px 0;
+    height: 0;
+    width: 0;
+    position: relative;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #E7337A;
+    border-left: 50px solid transparent;
+    transform: rotate(35deg);
+}
+.d14:before,
+.d14:after {
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+.d14:before {
+    top: -26px;
+    left: -32px;
+    border-bottom: 40px solid #E7337A;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transform: rotate(-35deg);
+}
+.d14:after {
+    top: 2px;
+    left: -53px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #E7337A;
+    border-left: 50px solid transparent;
+    transform: rotate(-70deg);
+}

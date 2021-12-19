@@ -1,0 +1,113 @@
+.title
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.017em;
+    color: #262435;
+    text-align:left;
+    margin-right: 70px;
+}
+
+.content
+{
+    margin: 90px 375px 100px 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-align:left;
+}
+
+
+.artical
+{
+    margin-top: 50px;
+    width: 100%;
+    display: inline-block;
+}
+
+.image
+{
+    width: 33%;
+    height: 274px;
+    border-radius: 10px;
+    background-size:100% 100%;
+    float: left;
+}
+
+
+.wrapper_artical
+{
+    float: left;
+    width: 60%;
+    text-align:left;
+    height: 274px;
+
+    margin-left: 34px;
+    position: relative;
+    float: right;
+
+    height: 100%;
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.017em;
+    color: #262435;
+}
+
+.artical_description
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.017em;
+    margin-top:20px;
+    /* Blaak */
+
+    position: relative;
+    /*margin-left: 37px;*/
+    height: 80%;
+    color: #262435;
+}
+
+.artical_title
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.017em;
+    color: #262435;
+    text-align:left;
+    position: relative;
+}
+
+ul.leaders {
+    max-width: 70%;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+            "- - - - - - - - - - - - - - - - - - - - "
+            "- - - - - - - - - - - - - - - - - - - - "
+            "- - - - - - - - - - - - - - - - - - - - "
+            "- - - - - - - - - - - - - - - - - - - - "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white}
+

@@ -1,0 +1,132 @@
+.slick-track
+{
+    display: flex;
+    text-align: center;
+}
+
+.slick-slide.slick-active{
+    /* background-color: blue; */
+}
+
+.slide_item
+{
+    width: 250px;
+    height: 206.37px;
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    /* background-image: url("https://thumbor.newswave.ru/p-89D99QmMQvMrFeis6eL-oqEqE=/fit-in/1200x0/filters:quality(80)/https://assets.prmira.ru/cache/2021/05/23/bez-nazvaniia-2f47882517.jpeg"); */
+}
+/* Слайдер */
+.slick-slider{
+    margin-left: 145px;
+    margin-right: 145px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    
+margin-left: 35px;
+/* padding-left: 20px;
+padding-right: 20px; */
+}
+/* Слайд */
+.slick-slide{
+
+}
+
+/*.slide_item*/
+/*{*/
+/*    width: 250px;*/
+/*    !* width: 75%; *!*/
+/*    height: 206.37px;*/
+/*    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));*/
+/*    border-radius: 10px;*/
+/*    background-size:100% 100%;*/
+/*    */
+/*}*/
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev{  z-index: 1 !important;}
+/* Стрелка вправо */
+.slick-arrow.slick-next{  z-index: 1 !important;}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{  z-index: 1;}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+
+/* Стрелка */
+.slick-arrow{
+    position: absolute;
+    top:50%;
+    margin: -25px 0 0 0;
+    z-index: 1 !important;
+    width: 30px;
+    height: 50px;
+    font-size: 0;
+    border: 0px;
+    
+}
+/* .slider
+{position: relative;} */
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    left: 0;
+    background: url(left_arrow.svg) 0 0 / 100% no-repeat;
+
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: 0;
+    background: url(right_arrow.svg) 0 0 / 100% no-repeat;
+
+}
+
+/*.tags_of_dishes*/
+/*{*/
+/*    position: absolute;*/
+/*width: 176.72px;*/
+/*height: 50.25px;*/
+/*right: 0;*/
+/*top: 130px;*/
+/*background: rgba(255, 255, 255, 0.7);*/
+/*border-radius: 10px 0px 0px 10px;*/
+/*z-index: 100;*/
+/*}*/
+
+#allcategories
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.017em;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}

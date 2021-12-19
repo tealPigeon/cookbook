@@ -1,0 +1,35 @@
+.slide_item
+{
+    width: 250px;
+    /* width: 75%; */
+    height: 206.37px;
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    background-size:100% 100%;
+}
+
+.tags_of_dishes
+{
+    position: absolute;
+    width: 176.72px;
+    height: 50.25px;
+    right: 0;
+    top: 130px;
+    background: rgba(255, 255, 255, 0.856);
+    border-radius: 10px 0px 0px 10px;
+    z-index: 100;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.tag{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: right;
+    letter-spacing: -0.017em;
+    color: #262435;
+    margin: auto;
+}
