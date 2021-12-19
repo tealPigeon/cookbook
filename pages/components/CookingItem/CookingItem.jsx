@@ -1,11 +1,11 @@
-import css from "./FavouritesItem.module.css"
+import css from "./CookingItem.module.css"
 import React,{Fragment} from 'react';
 import ReactStars from "react-rating-stars-component";
 // import {NavLink} from "react-router-dom";
 import img1 from "./photo_2021-11-01_03-57-07.jpg";
 import Link from "next/link"
 
-const FavouritesItem = (props) =>{
+const CookingItem = (props) =>{
 
     const firstExample = {
         size: 34,
@@ -58,4 +58,4 @@ const FavouritesItem = (props) =>{
     );
 }
 
-export default FavouritesItem;
+export default CookingItem;

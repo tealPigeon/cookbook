@@ -36,6 +36,7 @@
     color: #262435;
     text-align:left;
     position: relative;
+    display: inline-block;
 }
 
 .wrapper_article
@@ -45,6 +46,7 @@
     text-align:left;
     height: 274px;
     margin-left: 37px;
+    position:relative;
 }
 
 .article_description
@@ -82,17 +84,68 @@ height: 80%;
     right: 0;
 }
 
-.star
-{
-    cursor: pointer;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 
 .article
 {
     margin-top: 50px;
     display: inline-block;
 }
+
+
+.close_button
+{
+   position: absolute;
+    top:0;
+    right: 0;
+
+}
+
+.star
+{
+    cursor: pointer;
+    /*display: block;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    text-align:right;
+    /*position: relative;*/
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 0;
+}
+
+
+
+.close {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: 0;
+    float: right;
+    /* Colors/Arroy */
+    background-color: #FFFFFF;
+    border: 0;
+    /*border: 2px solid #DBDBD6;*/
+    /*transform: rotate(90deg);*/
+    z-index: 5;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    top:0 px;
+    right: 0px;
+    content: ' ';
+    height: 29px;
+    width: 2px;
+    background-color: #DBDBD6;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+

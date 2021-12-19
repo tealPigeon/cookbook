@@ -14,3 +14,196 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+
+.slick-track
+{
+    display: flex;
+    text-align: center;
+}
+
+.slick-slide.slick-active{
+    /* background-color: blue; */
+}
+
+.slide_item
+{
+    width: 250px;
+    height: 206.37px;
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    /* background-image: url("https://thumbor.newswave.ru/p-89D99QmMQvMrFeis6eL-oqEqE=/fit-in/1200x0/filters:quality(80)/https://assets.prmira.ru/cache/2021/05/23/bez-nazvaniia-2f47882517.jpeg"); */
+}
+/* Слайдер */
+.slick-slider{
+    margin-left: 145px;
+    margin-right: 145px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    
+margin-left: 35px;
+/* padding-left: 20px;
+padding-right: 20px; */
+}
+/* Слайд */
+.slick-slide{
+
+}
+
+/*.slide_item*/
+/*{*/
+/*    width: 250px;*/
+/*    !* width: 75%; *!*/
+/*    height: 206.37px;*/
+/*    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));*/
+/*    border-radius: 10px;*/
+/*    background-size:100% 100%;*/
+/*    */
+/*}*/
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+
+/* Стрелка */
+.slick-arrow{
+    position: absolute;
+    top:50%;
+    margin: -25px 0 0 0;
+    z-index: 3;
+    width: 30px;
+    height: 50px;
+    font-size: 0;
+    border: 0px;
+    
+}
+/* .slider
+{position: relative;} */
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    left: 0;
+    background: url(../public/left_arrow.svg) 0 0 / 100% no-repeat;
+
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: 0;
+    background: url(../public/right_arrow.svg) 0 0 / 100% no-repeat;
+
+}
+
+/*.tags_of_dishes*/
+/*{*/
+/*    position: absolute;*/
+/*width: 176.72px;*/
+/*height: 50.25px;*/
+/*right: 0;*/
+/*top: 130px;*/
+/*background: rgba(255, 255, 255, 0.7);*/
+/*border-radius: 10px 0px 0px 10px;*/
+/*z-index: 100;*/
+/*}*/
+
+#allcategories
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.017em;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arsenal/v5/wXKrE3kQtZQ4pF3D51XcANwr.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arsenal/v5/wXKrE3kQtZQ4pF3D51zcANwr.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arsenal/v5/wXKrE3kQtZQ4pF3D51fcANwr.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arsenal/v5/wXKrE3kQtZQ4pF3D51bcANwr.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Arsenal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arsenal/v5/wXKrE3kQtZQ4pF3D51jcAA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.star_input{
+        display: none;
+     }
+
+  .star
+   {cursor: pointer;
+     transition: color 200ms;
+  }
