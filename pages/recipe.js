@@ -80,35 +80,26 @@ function Recipe(props) {
                 <div className={css.step_by_step_recipe}>
                     <div className={css.title}>Пошаговый рецепт </div>
                     <div className={css.sub_title}>Подготовления</div>
-                    {/*<div className={css.step_by_step_preparations}></div>*/}
                     <div className={css.step_by_step_text}>Помойте фрукты. Подготовьте все необходимые ингредиенты.</div>
-                    {/*<div className={css.step_by_step_preparations}>Готовка</div>*/}
                     <div className={css.sub_title}>Готовка</div>
 
                     <div className={css.steps}>
-
-                        <div className={css.step}>
-                            <div className={css.step_image} style={{backgroundImage:'url("'+RecipesData.steps_with_images[i].image+'")'}}>
-                                <div className={css.step_count}>
-                                    <p>Шаг {i+1}</p>
+                        {RecipesData.steps_with_images!=null ?  (
+                            RecipesData.steps_with_images.map((step) =>
+                                <div className={css.step}>
+                                    <div className={css.step_image} style={{backgroundImage:'url("'+step.image+'")'}}>
+                                        <div className={css.step_count}>
+                                            <p>Шаг {i+1}</p>
+                                        </div>
+                                    </div>
+                                    <div className={css.step_description}>{step.description}
+                                    </div>
+                                    {console.log(i++)}
                                 </div>
-                            </div>
-                            <div className={css.step_description}>{RecipesData.steps_with_images[i].description}
-                            </div>
-                            {console.log(i++)}
-                        </div>
+                            )
+                            ): null }
 
-                        <div className={css.step}>
-                            <div className={css.step_image} style={{backgroundImage:'url("'+RecipesData.steps_with_images[i].image+'")'}}>
-                                <div className={css.step_count}>
-                                    <p>Шаг {i+1}</p>
-                                </div>
-                            </div>
-                            <div className={css.step_description}>{RecipesData.steps_with_images[i].description}
-                            </div>
-                            {console.log(i++)}
-                        </div>
-                    </div>
+
 
                     <div className={css.short_recipe}>
                         <ol>
@@ -122,9 +113,9 @@ function Recipe(props) {
                     </div>
                     <button className={css.start_cooking_button}>Начать готовку!</button>
                 </div>
-            </div>
+            </div></div>
             <Footer/>
-        </div>
+            </div>
     );
 }
 
