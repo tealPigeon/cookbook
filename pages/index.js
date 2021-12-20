@@ -14,34 +14,5 @@ export default function Home() {
     <Content/>
     <Footer/>
   </div>
-
   )
 }
-
-
-
-//
-// import Slider from "./components/Slider/Slider";
-// import Content from "./MainScreen/Content/Content";
-//
-// // import RateDish from "../RateDish/RateDish"
-
-// import Header from "./components/Header/Header"
-// import Footer from "./components/Footer/Footer";
-// import RateDish from "./RateDish/RateDish";
-// import Authorization from "./Authorization/Authorization";
-//
-// const MainScreen = () => {
-//   return (
-//       <div>
-//         <Header/>
-//         <Slider/>
-//         <Content/>
-//         {/*<Authorization/>*/}
-//         {/*<RateDish/>*/}
-//         <Footer/>
-//       </div>
-//   );
-// }
-//
-// export default MainScreen;
