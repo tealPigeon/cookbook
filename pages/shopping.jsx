@@ -1,9 +1,9 @@
 
 import React,{Fragment} from 'react';
-import css from './ShoppingList/ShoppingList.module.css'
+import css from '../styles/ShoppingList.module.css'
 import ReactStars from "react-rating-stars-component";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import ShoppingListData from "/public/data/ShoppingListData.json"
 
 function Shopping()
@@ -13,9 +13,9 @@ function Shopping()
             <Header/>
             <div className={css.content}>
                 <div className={css.title}>Список покупок</div>
-                {ShoppingListData.map((item, index)=>{
+                {ShoppingListData.map((item)=>{
                     return (
-                        <div className={css.artical}>
+                        <div key={item.id} className={css.artical}>
                             <div className={css.image}  style={{backgroundImage:'url(' +item.image+')'}}></div>
                             <div className={css.wrapper_artical}>
                                 <div className={css.artical_title}>
@@ -24,7 +24,7 @@ function Shopping()
                                 <div className={css.artical_description}>
                                     <ul className={css.leaders}>
                                         {item.ingredients.map((ingredient, index)=>{
-                                            return <li><span><input type="checkbox"></input>{ingredient.name}</span> <span>{ingredient.value}</span></li>})}
+                                            return <li key={ingredient.name}><span><input type="checkbox"></input>{ingredient.name}</span> <span>{ingredient.value}</span></li>})}
                                     </ul>
                                 </div>
                             </div>

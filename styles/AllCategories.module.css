@@ -1,0 +1,67 @@
+.all_categories
+{
+
+    width: auto;
+    height: auto;
+    display: flex;
+    margin: 0 0 40px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.all
+{
+    margin: 100px 330px 50px 375px;
+}
+
+
+.categories
+{
+    width: 259px;
+    height: 207px;
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    background-size:100% 100%;
+    display: inline;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.tags_of_dishes
+{
+    position: absolute;
+    width: 176.72px;
+    height: 50.25px;
+    right: 0;
+    top: 130px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px 0px 0px 10px;
+    z-index: 100;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.tag{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: right;
+    letter-spacing: -0.017em;
+    color: #262435;
+    margin: auto;
+}
+
+.title
+{/* title */
+
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.25px;
+
+    /* Blaak */
+
+    color: #262435;}

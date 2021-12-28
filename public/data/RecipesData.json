@@ -42,10 +42,12 @@
   ],
   "steps_with_images":[
     {
+      "id": 1,
       "image":"https://cdn.food.ru/unsigned/fit/640/480/ce/0/czM6Ly9tZWRpYS9waWN0dXJlcy9yZWNpcGVzLzQ5NjAzL3N0ZXBzLzRRZ2VxVi5qcGVn.jpg",
       "description":"Отправьте в разогретый сотейник тростниковый сахар и топите его, постоянно помешивая около 10 минут."
     },
     {
+      "id": 2,
       "image":"https://cdn.food.ru/unsigned/fit/640/480/ce/0/czM6Ly9tZWRpYS9waWN0dXJlcy9yZWNpcGVzLzQ5NjAzL3N0ZXBzLzRRZ2VxVi5qcGVn.jpg",
       "description":"К растаявшему сахару добавьте нарезанные кубиком яблоки и грушу. На медленном огне соедините фрукты с сахаром."
     }
