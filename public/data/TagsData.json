@@ -1,6 +1,6 @@
 
 [
-    {"id":1, "title":"Супы", "link": "/in_progress", "image":"https://e3.edimdoma.ru/data/recipes/0006/9951/69951-ed4_wide.jpg?1628808148"},
+    {"id":1, "title":"Супы", "link": "/tag", "image":"https://e3.edimdoma.ru/data/recipes/0006/9951/69951-ed4_wide.jpg?1628808148"},
     {"id":2, "title":"Салаты","link": "/in_progress","image":"https://lafoy.ru/photo_l/foto-1605-0.jpg"},
     {"id":3, "title":"Десерты","link": "/in_progress","image":"https://art-lunch.ru/content/uploads/2020/08/chernichniy-tiramisu-000.jpg"},
     {"id":4, "title":"Напитки","link": "/in_progress","image":"https://www.edimdoma.ru/system/images/contents/0001/2877/wide/shutterstock_169781966.jpg?1622559476"},

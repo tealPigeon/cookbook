@@ -1,0 +1,122 @@
+.title
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.017em;
+    color: #262435;
+    text-align:left;
+    margin-right: 70px;
+}
+
+.content_account
+{
+    margin: 90px 200px 170px 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-align:left;
+}
+
+
+.setting
+{
+    margin-top: 50px;
+    width: 100%;
+    display: inline-block;
+}
+
+ .image
+{
+    width: 284px;
+    height: 284px;
+    background-size:100% 100%;
+    float: left;
+    border-radius: 50%;
+}
+
+
+.wrapper_setting
+{
+    float: left;
+    width: 60%;
+    text-align:left;
+    height: 274px;
+
+    margin-left: 34px;
+    position: relative;
+    float: right;
+
+    height: 100%;
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.017em;
+    color: #262435;
+}
+
+.setting_description
+{
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.017em;
+    margin-top:20px;
+    /* Blaak */
+
+    position: relative;
+    /*margin-left: 37px;*/
+    height: 80%;
+    color: #262435;
+}
+
+.wrapper_setting input
+{
+    border: 0;
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.017em;
+
+    /* Blaak */
+text-align: right;
+    color: #262435;
+}
+
+/* Выставляем все label друг под другом */
+.wrapper_setting label {
+    display:block;
+    margin-bottom: 40px;
+}
+
+/* Чуть-чуть выравниваем заголовки и input'ы */
+.wrapper_setting label > span{
+    display:inline-block;
+    width: 200px;
+}
+
+.wrapper_setting label > input{
+    display:inline-block;
+    width: 200px;
+}
+
+.change_logo
+{
+    width: 25.65px;
+    height: 28.18px;
+    display:inline-block;
+    margin-left: 30px;
+}
+
+.input
+{
+    margin-right: 30px;
+}

@@ -1,0 +1,50 @@
+.tag
+{
+    /*width: 93px;*/
+    height: 39px;
+    background: #DFE7E9;
+    border-radius: 10px;
+    /*display: inline-block;*/
+    /*display: inline-block;*/
+    margin: auto;
+    /*flex: 1 1 auto;*/
+    display: inline-block;
+    padding: 5px;
+    padding-right: 10px;
+}
+
+.tags
+{
+    /*display: flex;*/
+    padding: 50px 400px 0 400px ;
+    /*flex-wrap: wrap;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tag_radio:checked
+{
+    color: #7E7C8F;
+}
+
+.title
+{/* title */
+
+    font-family: Arsenal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.25px;
+
+    /* Blaak */
+
+    color: #262435;}
+
+.content
+{    margin: 90px 375px 100px 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-align:left;}

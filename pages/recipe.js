@@ -1,12 +1,13 @@
 import React from 'react';
-import css from './Recipe/Recipe.module.css'
-import favoritesLogo from "./Recipe/AddtoFavoritesIcon.svg";
+import css from '../styles/Recipe.module.css'
+import favoritesLogo from "../public/AddtoFavoritesIcon.svg";
 import ReactStars from "react-rating-stars-component";
 import Image from 'next/image';
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import RecipesData from "/public/data/RecipesData.json"
-import RateDish from "./RateDish/RateDish";
+import RateDish from "./components/RateDish";
+
 
 let rateDishIsOpen = false;
 
@@ -46,14 +47,13 @@ function Recipe(props) {
                     </div>
                     <div className={css.short_description}>{RecipesData.description}
                         <div className={css.start_cooking}>
-                            <div className={css.logo_text}>Начать готовку</div>
-                            <Image className={css.logo_image} src={require( "./Recipe/startCookingIcon.svg")} alt="me" width="40px" height="40px" />
+                            <div className={css.logo_text}>Добавить ингредиенты <br/> в список покупок</div>
+                            <Image className={css.logo_image} src={require( "/public/logo_shopping.svg")} alt="me" width="40px" height="40px" />
                             {/*<div className={css.logo_image} style={{backgroundImage:'url("'+startCookingIcon+'")'}}></div>*/}
                         </div>
                         <div className={css.add_to_favorites} >
-                            <div className={css.logo_image} style={{backgroundImage:'url("'+favoritesLogo+'")'}}></div>
-                            <Image className={css.logo_image} src={require( "./Recipe/AddtoFavoritesIcon.svg")} alt="me" width="40px" height="40px" />
-                            <div className={css.logo_text}>Добавить в избранное</div>
+                            <Image className={css.logo_image} src={require( "../public/AddtoFavoritesIcon.svg")} alt="me" width="40px" height="40px" />
+                            <div className={css.logo_text_favorite}>Добавить в избранное</div>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,9 @@ function Recipe(props) {
                         <ul className={css.leaders}>
                             {
                                 RecipesData.ingredients.map((ingredient, index) =>{
-                                    return <li><span><input type="checkbox"></input>{ingredient.name}</span> <span>{ingredient.value}</span></li>
+                                    return <li key={ingredient.name}><span>
+                                        {/*<input type="checkbox"></input>*/}
+                                        {ingredient.name}</span> <span>{ingredient.value}</span></li>
                                 })
                             }
                         </ul>
@@ -83,10 +85,10 @@ function Recipe(props) {
                     <div className={css.step_by_step_text}>Помойте фрукты. Подготовьте все необходимые ингредиенты.</div>
                     <div className={css.sub_title}>Готовка</div>
 
-                    <div className={css.steps}>
+                    <div className={css}>
                         {RecipesData.steps_with_images!=null ?  (
                             RecipesData.steps_with_images.map((step) =>
-                                <div className={css.step}>
+                                <div key={step.id} className={css.step}>
                                     <div className={css.step_image} style={{backgroundImage:'url("'+step.image+'")'}}>
                                         <div className={css.step_count}>
                                             <p>Шаг {i+1}</p>
@@ -111,7 +113,7 @@ function Recipe(props) {
                             <li>Украсьте ягодами и мятой. Подавайте смузи охлажденным.</li>
                         </ol>
                     </div>
-                    <button className={css.start_cooking_button}>Начать готовку!</button>
+                    {/*<button className={css.start_cooking_button}>Начать готовку!</button>*/}
                 </div>
             </div></div>
             <Footer/>
