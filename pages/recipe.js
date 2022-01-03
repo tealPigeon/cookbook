@@ -18,7 +18,6 @@ function Recipe(props) {
         func: ()=>{console.log(`Example 4: new value is ${RecipesData.rating}`);},
         edit: false,
         isHalf: true,
-        cursor:"pointer",
         // color: "#ffd700",
         // emptyIcon: <i className="far fa-star"/>,
         // halfIcon: <i className="fa fa-star-half-alt" />,
@@ -48,9 +47,7 @@ function Recipe(props) {
                     <div className={css.short_description}>{RecipesData.description}
                         <div className={css.start_cooking}>
                             <div className={css.logo_text}>Добавить ингредиенты <br/> в список покупок</div>
-                            <Image className={css.logo_image} src={require( "/public/logo_shopping.svg")} alt="me" width="40px" height="40px" />
-                            {/*<div className={css.logo_image} style={{backgroundImage:'url("'+startCookingIcon+'")'}}></div>*/}
-                        </div>
+                            <Image className={css.logo_image} src={require( "/public/logo_shopping.svg")} alt="me" width="40px" height="40px" /></div>
                         <div className={css.add_to_favorites} >
                             <Image className={css.logo_image} src={require( "../public/AddtoFavoritesIcon.svg")} alt="me" width="40px" height="40px" />
                             <div className={css.logo_text_favorite}>Добавить в избранное</div>

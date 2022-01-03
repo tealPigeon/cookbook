@@ -26,6 +26,8 @@
     display: inline;
     text-align:right;
 cursor: pointer;
+    min-width: 150px;
+    background-color: #E7337A;
 }
 
 .rating_title
