@@ -34,8 +34,8 @@ function Recipe(props) {
         <div className="App">
             <Header/>
             <div className={css.content}>
-                <div className={css.title}>{RecipesData.title}</div>
-                <div className={css.stars} onClick={() => {rateDishIsOpen=!rateDishIsOpen; setRateDish(rateDishIsOpen)} }>
+                <div className={css.title} onClick={() => {rateDishIsOpen=!rateDishIsOpen; setRateDish(rateDishIsOpen)} }>{RecipesData.title}</div>
+                <div className={css.stars} >
                     <ReactStars {...firstExample} />
                 </div>
                 <p className={css.rating_title}>{RecipesData.rating} ({RecipesData.number_of_reviews})</p>
