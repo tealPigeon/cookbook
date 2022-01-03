@@ -9,14 +9,14 @@ import RateDish from "../public/components/RateDish";
 import Authorization from "../public/components/Authorization";
 
 
-let rateDishIsOpen = false;
+
 
 function Recipe(props) {
 
     const firstExample = {
         size: 34,
         value: RecipesData.rating,
-        func: ()=>{console.log(`Example 4: new value is ${RecipesData.rating}`);},
+        func: ()=>{console.log(`new value is ${RecipesData.rating}`);},
         edit: false,
         isHalf: true,
         // color: "#ffd700",
@@ -25,7 +25,7 @@ function Recipe(props) {
         // filledIcon: <i className="fa fa-star" />,
         activeColor: "#ffd700",
     };
-
+    let rateDishIsOpen = false;
     const [showRateDish, setRateDish] = React.useState(rateDishIsOpen)
 
     let i=0;
@@ -34,8 +34,8 @@ function Recipe(props) {
         <div className="App">
             <Header/>
             <div className={css.content}>
-                <div className={css.title} onClick={() => {rateDishIsOpen=!rateDishIsOpen; setRateDish(rateDishIsOpen)} }>{RecipesData.title}</div>
-                <div className={css.stars} >
+                <div className={css.title}>{RecipesData.title}</div>
+                <div className={css.stars} onClick={() => {rateDishIsOpen=!rateDishIsOpen; setRateDish(rateDishIsOpen)} }>
                     <ReactStars {...firstExample} />
                 </div>
                 <p className={css.rating_title}>{RecipesData.rating} ({RecipesData.number_of_reviews})</p>
@@ -48,7 +48,8 @@ function Recipe(props) {
                     <div className={css.short_description}>{RecipesData.description}
                         <div className={css.start_cooking}>
                             <div className={css.logo_text}>Добавить ингредиенты <br/> в список покупок</div>
-                            <Image className={css.logo_image} src={require( "/public/logo_shopping.svg")} alt="me" width="40px" height="40px" /></div>
+                            <Image className={css.logo_image} src={require( "/public/logo_shopping.svg")} alt="me" width="40px" height="40px" />
+                        </div>
                         <div className={css.add_to_favorites} >
                             <Image className={css.logo_image} src={require( "../public/AddtoFavoritesIcon.svg")} alt="me" width="40px" height="40px" />
                             <div className={css.logo_text_favorite}>Добавить в избранное</div>
@@ -56,7 +57,7 @@ function Recipe(props) {
                     </div>
                 </div>
                 {
-                    showRateDish ? rateDishIsOpen=!rateDishIsOpen && <Authorization/>: null
+                    showRateDish ? rateDishIsOpen=!rateDishIsOpen && <RateDish/>: null
                 }
                 <div className={css.ingredients}>  <div className={css.title}>Ингредиенты </div>
 
@@ -89,7 +90,7 @@ function Recipe(props) {
                                 <div key={step.id} className={css.step}>
                                     <div className={css.step_image} style={{backgroundImage:'url("'+step.image+'")'}}>
                                         <div className={css.step_count}>
-                                            <p>Шаг {i+1}</p>
+                                            <p>Шаг {step.id}</p>
                                         </div>
                                     </div>
                                     <div className={css.step_description}>{step.description}
@@ -97,25 +98,23 @@ function Recipe(props) {
                                     {console.log(i++)}
                                 </div>
                             )
-                            ): null }
+                        ): null }
 
-
-
-                    <div className={css.short_recipe}>
-                        <ol>
-                            <li>Приготовьте манговый слой. Сложите в чашу блендера два замороженных банана, манго, очищенные дольки апельсина и добавьте сахар. Взбейте до однородности. Разлейте по бокалам для подачи, заполняя их наполовину.
-                                Если смузи получается слишком густым, порциями добавьте апельсиновый сок, чтобы добиться желаемой консистенции.
-                            </li>
-                            <li> Приготовьте ягодный слой. В вымытую чашу блендера сложите один замороженный банан, охлажденную чернику, ежевику, йогурт. Добавьте сахар. Взбейте до однородности. Аккуратно вылейте в емкости для подачи поверх мангового слоя.Если смузи получается слишком густым, порциями добавляйте молоко, чтобы добиться желаемой консистенции.
-                            </li>
-                            <li>Украсьте ягодами и мятой. Подавайте смузи охлажденным.</li>
-                        </ol>
+                        <div className={css.short_recipe}>
+                            <ol>
+                                <li>Приготовьте манговый слой. Сложите в чашу блендера два замороженных банана, манго, очищенные дольки апельсина и добавьте сахар. Взбейте до однородности. Разлейте по бокалам для подачи, заполняя их наполовину.
+                                    Если смузи получается слишком густым, порциями добавьте апельсиновый сок, чтобы добиться желаемой консистенции.
+                                </li>
+                                <li> Приготовьте ягодный слой. В вымытую чашу блендера сложите один замороженный банан, охлажденную чернику, ежевику, йогурт. Добавьте сахар. Взбейте до однородности. Аккуратно вылейте в емкости для подачи поверх мангового слоя.Если смузи получается слишком густым, порциями добавляйте молоко, чтобы добиться желаемой консистенции.
+                                </li>
+                                <li>Украсьте ягодами и мятой. Подавайте смузи охлажденным.</li>
+                            </ol>
+                        </div>
+                        {/*<button className={css.start_cooking_button}>Начать готовку!</button>*/}
                     </div>
-                    {/*<button className={css.start_cooking_button}>Начать готовку!</button>*/}
-                </div>
-            </div></div>
+                </div></div>
             <Footer/>
-            </div>
+        </div>
     );
 }
 

@@ -14,8 +14,8 @@ function Header(props) {
     let menuIsOpen = false;
     let authorization = false;
 
-    const [showMenu, setMenu] = React.useState(menuIsOpen)
-    const [showAuthorization, setAuthorization] = React.useState(authorization)
+    const [showMenu, setMenu] = useState(menuIsOpen)
+    const [showAuthorization, setAuthorization] = useState(authorization)
 
     let name = props.name;
     return (
