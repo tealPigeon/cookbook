@@ -6,6 +6,7 @@ import Footer from "../public/components/Footer";
 import Header from "../public/components/Header";
 import RecipesData from "/public/data/RecipesData.json"
 import RateDish from "../public/components/RateDish";
+import Authorization from "../public/components/Authorization";
 
 
 let rateDishIsOpen = false;
@@ -33,8 +34,8 @@ function Recipe(props) {
         <div className="App">
             <Header/>
             <div className={css.content}>
-                <div className={css.title} onClick={() => {rateDishIsOpen=!rateDishIsOpen; setRateDish(rateDishIsOpen)} }>{RecipesData.title}</div>
-                <div className={css.stars} >
+                <div className={css.title}>{RecipesData.title}</div>
+                <div className={css.stars} onClick={() => {rateDishIsOpen=!rateDishIsOpen; setRateDish(rateDishIsOpen)} }>
                     <ReactStars {...firstExample} />
                 </div>
                 <p className={css.rating_title}>{RecipesData.rating} ({RecipesData.number_of_reviews})</p>
@@ -55,7 +56,7 @@ function Recipe(props) {
                     </div>
                 </div>
                 {
-                    showRateDish ? rateDishIsOpen=!rateDishIsOpen && <RateDish/>: null
+                    showRateDish ? rateDishIsOpen=!rateDishIsOpen && <Authorization/>: null
                 }
                 <div className={css.ingredients}>  <div className={css.title}>Ингредиенты </div>
 
