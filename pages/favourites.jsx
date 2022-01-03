@@ -1,11 +1,11 @@
 
 import React,{Fragment} from 'react';
 import css from "../styles/Content.module.css"
-import FavouritesItem from "./components/FavouritesItem";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import FavouritesItem from "../public/components/FavouritesItem";
+import Header from "../public/components/Header";
+import Footer from "../public/components/Footer";
 import Link from "next/link";
-import Authorization from "./components/Authorization";
+import Authorization from "../public/components/Authorization";
 
 // const favourites = [
 //     {id:1, title:'Пельмени', href: '/recipe', image:"https://mospravda.ru/wp-content/uploads/2021/09/6024066639.jpg", rating:5, text:"Нежный, легкий и очень вкусный супчик!!! Отлично подойдет для деток. Хотя многие детки не любят почему-то брокколи. Но моя доченька слопала с удовольствием! И мы с мужем тоже!"},

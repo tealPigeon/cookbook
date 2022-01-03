@@ -2,8 +2,8 @@
 import React,{Fragment} from 'react';
 import css from '../styles/ShoppingList.module.css'
 import ReactStars from "react-rating-stars-component";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "../public/components/Header";
+import Footer from "../public/components/Footer";
 import ShoppingListData from "/public/data/ShoppingListData.json"
 
 function Shopping()

@@ -1,5 +1,5 @@
 
-import img from "../../public/close_logo.svg"
+import img from "../close_logo.svg"
 import React,{Fragment} from 'react';
 import css from "../../styles/Authorization.module.css"
 

@@ -3,10 +3,10 @@ import css from '../styles/Recipe.module.css'
 import favoritesLogo from "../public/AddtoFavoritesIcon.svg";
 import ReactStars from "react-rating-stars-component";
 import Image from 'next/image';
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "../public/components/Footer";
+import Header from "../public/components/Header";
 import RecipesData from "/public/data/RecipesData.json"
-import RateDish from "./components/RateDish";
+import RateDish from "../public/components/RateDish";
 
 
 let rateDishIsOpen = false;

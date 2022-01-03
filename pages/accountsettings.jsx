@@ -1,8 +1,8 @@
 
 import React,{Fragment} from 'react';
 import css from '../styles/AccountSettings.module.css'
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "../public/components/Footer";
+import Header from "../public/components/Header";
 import Image from 'next/image';
 
 function Accountsettings()

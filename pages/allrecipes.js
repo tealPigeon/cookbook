@@ -1,11 +1,11 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "../public/components/Footer";
+import Header from "../public/components/Header";
 import Recipe from "./recipe";
 import React,{Fragment} from 'react';
 import css from '../styles/allrecipes.module.css'
-import Article from "./components/Article";
+import Article from "../public/components/Article";
 import PopularDishes from "/public/data/PopularDishes"
-import Content from "./components/Content";
+import Content from "../public/components/Content";
 import TagsData from "/public/data/TagsData.json"
 
 

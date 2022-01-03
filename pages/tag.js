@@ -1,9 +1,9 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "/public/components/Footer";
+import Header from "/public/components/Header";
 import React,{Fragment} from 'react';
-import css from '../styles/tag.module.css'
+import css from '/styles/tag.module.css'
 import SoupsData from "/public/data/SoupsData"
-import Content from "./components/Content";
+import Content from "/public/components/Content";
 import TagsData from "/public/data/TagsData.json"
 
 

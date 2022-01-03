@@ -2,8 +2,8 @@
 import React,{Fragment} from 'react';
 import css from "../styles/AllCategories.module.css"
 
-import Header from "./components/Header"
-import Footer from "./components/Footer";
+import Header from "../public/components/Header"
+import Footer from "../public/components/Footer";
 import TagsData from "../public/data/TagsData.json"
 import Link from "next/link"
 import styles from "../styles/Home.module.css";

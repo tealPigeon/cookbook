@@ -1,5 +1,5 @@
 import css from "../../styles/Registration.module.css"
-import img from "../../public/close_logo.svg"
+import img from "../close_logo.svg"
 import React,{Fragment} from 'react';
 
 function Registration() {

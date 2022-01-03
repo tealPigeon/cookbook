@@ -5,13 +5,11 @@ import PopularDishes from "/public/data/PopularDishes"
 
 const Content = (props) =>{
 
-    let data =Array.from(props.data);
-    console.log(data);
     return (
             <div className={css.content}>
             <p className={css.content_title}>{props.title}</p>
                 {
-                    data.map((el) => {
+                    props.data.map((el) => {
                         return <Article key={el.id} {...el }/>
                     })
                 }
