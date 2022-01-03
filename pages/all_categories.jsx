@@ -1,11 +1,12 @@
 
 import React,{Fragment} from 'react';
-import css from "./AllCategories.module.css"
+import css from "../styles/AllCategories.module.css"
 
-import Header from "./components/Header/Header"
-import Footer from "./components/Footer/Footer";
+import Header from "./components/Header"
+import Footer from "./components/Footer";
 import TagsData from "../public/data/TagsData.json"
 import Link from "next/link"
+import styles from "../styles/Home.module.css";
 
 
 function All_categories() {
@@ -27,6 +28,7 @@ function All_categories() {
                     }
                 </div>
             </div>
+            <Link href={"/allrecipes"} passHref><p className={styles.sub_title}>Все рецепты...</p></Link>
             <Footer/>
         </Fragment>
 
