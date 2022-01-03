@@ -9,11 +9,11 @@ const Menu =()=>
         <div className={css.menuActive}>
         <div className={css.menu__content}>
                 <ul className={css.menu__list}>
-                    <li className={css.menu__item}><Link href="/favourites">Избранное</Link></li>
+                    <li className={css.menu__item}><Link href="/favourites" passHref>Избранное</Link></li>
                     <li className={css.menu__item}>Таймер</li>
-                    <li className={css.menu__item}><Link href="/shopping">Список покупок</Link></li>
-                    <li className={css.menu__item}><Link href="/accountsettings">Настройки аккаунта</Link></li>
-                    <li className={css.menu__item}><Link href="/favourites">Выход</Link></li>
+                    <li className={css.menu__item}><Link href="/shopping" passHref>Список покупок</Link></li>
+                    <li className={css.menu__item}><Link href="/accountsettings" passHref>Настройки аккаунта</Link></li>
+                    <li className={css.menu__item}><Link href="/favourites" passHref>Выход</Link></li>
                     </ul>
             </div>
         </div>
