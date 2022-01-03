@@ -17,7 +17,7 @@ function All_categories() {
                 <div className={css.all_categories}>
                     {
                         TagsData.map((tag) => {
-                            return <Link key={tag.id}  href={tag.link}  style={{ cursor: 'pointer'}}>
+                            return <Link key={tag.id}  href={tag.link}  style={{ cursor: 'pointer'}} passHref>
                                 <div className={css.categories} style={{backgroundImage:'url("'+ tag.image+'")' }}>
                                     <div className={css.tags_of_dishes}>
                                         <p className={css.tag} style={{color:'black'}}>{tag.title}</p>
