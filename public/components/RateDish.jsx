@@ -25,25 +25,25 @@ export default class RateDish extends React.Component{
     }
     render(){
         return (
-        this.state.isOpen ?
-        <Fragment>
-            <div className={css.hidden}></div>
-            <div className={css.background_block}>
-            <div className={css.authorization_lightbox}>
+            this.state.isOpen ?
+                <Fragment>
+                    <div className={css.hidden}></div>
+                    <div className={css.background_block}>
+                        <div className={css.authorization_lightbox}>
 
-                    <div className={css.title}>Оцените блюдо</div>
-                    <div className={css.close} onClick={()=>this.setState({isOpen: false})}></div>
-                    <div className={css.text}>
-                        Благодарим за использование нашего сервиса. Оцените, пожалуйста, приготовленное блюдо, чтобы остальным пользователям было легче сделать выбор
-                    </div>
-                    <div className={css.star}>
-                        <StarRating/>
-                        {/*<ReactStars {...firstExample} />*/}
+                            <div className={css.title}>Оцените блюдо</div>
+                            <div className={css.close} onClick={()=>this.setState({isOpen: false})}></div>
+                            <div className={css.text}>
+                                Благодарим за использование нашего сервиса. Оцените, пожалуйста, приготовленное блюдо, чтобы остальным пользователям было легче сделать выбор
+                            </div>
+                            <div className={css.star}>
+                                <StarRating/>
+                                {/*<ReactStars {...firstExample} />*/}
+                                {console.log('star')}
+                            </div>
+                        </div></div>
 
-                </div>
-            </div></div>
-
-        </Fragment>: null
-    );}
+                </Fragment>: null
+        );}
 
 }

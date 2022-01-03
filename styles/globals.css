@@ -30,17 +30,14 @@ a {
 .slide_item
 {
     width: 250px;
-    height: 206.37px;
+    height: 206px;
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
     /* background-image: url("https://thumbor.newswave.ru/p-89D99QmMQvMrFeis6eL-oqEqE=/fit-in/1200x0/filters:quality(80)/https://assets.prmira.ru/cache/2021/05/23/bez-nazvaniia-2f47882517.jpeg"); */
 }
 /* Слайдер */
 .slick-slider{
-    margin-left: 145px;
-    margin-right: 145px;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    margin: 100px 170px 20px;
     position: relative;
 }
 /* Слайдер запущен */
@@ -54,9 +51,8 @@ a {
 /* Лента слайдов */
 .slick-track{
     
-margin-left: 35px;
-/* padding-left: 20px;
-padding-right: 20px; */
+margin-left: 30px;
+    /*margin-right: 20px;*/
 }
 /* Слайд */
 .slick-slide{
@@ -101,7 +97,7 @@ padding-right: 20px; */
 .slick-arrow{
     position: absolute;
     top:50%;
-    margin: -25px 0 0 0;
+    margin: -25px -20px 0 -20px;
     z-index: 3;
     width: 30px;
     height: 50px;
@@ -207,3 +203,4 @@ padding-right: 20px; */
    {cursor: pointer;
      transition: color 200ms;
   }
+

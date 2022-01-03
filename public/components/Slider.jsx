@@ -10,7 +10,7 @@ export default class SwipeToSlide extends Component {
     const settings = {
       className: "center",
       infinite: true,
-      centerPadding: "60px",
+      centerPadding: "0px",
       slidesToShow: 5,
       swipeToSlide: true,
       zIndex: 1,
@@ -29,7 +29,7 @@ export default class SwipeToSlide extends Component {
                 })
             }
         </Slider>
-          <Link href="/all_categories"><a style={{ cursor: 'pointer'}}  id="allcategories" className={"sub_title"}>Все категории...</a></Link>
+          <Link href="/all_categories" passHref><a style={{ cursor: 'pointer'}}  id="allcategories" className={"sub_title"}>Все категории...</a></Link>
       </div>
     );
   }

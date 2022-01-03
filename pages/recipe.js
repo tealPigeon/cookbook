@@ -1,6 +1,5 @@
 import React from 'react';
 import css from '../styles/Recipe.module.css'
-import favoritesLogo from "../public/AddtoFavoritesIcon.svg";
 import ReactStars from "react-rating-stars-component";
 import Image from 'next/image';
 import Footer from "../public/components/Footer";
@@ -19,6 +18,7 @@ function Recipe(props) {
         func: ()=>{console.log(`Example 4: new value is ${RecipesData.rating}`);},
         edit: false,
         isHalf: true,
+        cursor:"pointer",
         // color: "#ffd700",
         // emptyIcon: <i className="far fa-star"/>,
         // halfIcon: <i className="fa fa-star-half-alt" />,
@@ -35,8 +35,8 @@ function Recipe(props) {
             <Header/>
             <div className={css.content}>
                 <div className={css.title}>{RecipesData.title}</div>
-                <div  onClick={() => {rateDishIsOpen=!rateDishIsOpen; setRateDish(rateDishIsOpen)} }>
-                    <ReactStars {...firstExample} className={css.stars}/>
+                <div className={css.stars} onClick={() => {rateDishIsOpen=!rateDishIsOpen; setRateDish(rateDishIsOpen)} }>
+                    <ReactStars {...firstExample} />
                 </div>
                 <p className={css.rating_title}>{RecipesData.rating} ({RecipesData.number_of_reviews})</p>
                 <div className={css.description}>
