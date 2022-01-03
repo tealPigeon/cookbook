@@ -18,7 +18,7 @@ const Article = (props) =>{
     };
 
     return (
-        <Link href={props.href}>
+        <Link href={props.href} passHref>
             <div className={css.article}>
                     <div className={css.image}  style={{backgroundImage:'url("'+ props.image+'")'}}></div>
                     <div className={css.wrapper_article}>

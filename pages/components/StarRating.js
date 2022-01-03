@@ -10,7 +10,7 @@ const StarRating =() =>{
             {[...Array(5)].map((star, i) => {
                 const ratingValue =i+1;
                 return(
-                    <Fragment>
+                    <Fragment div key={i}>
                         <label>
                         <input
                             className="star_input"

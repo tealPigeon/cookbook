@@ -28,7 +28,7 @@ function All_categories() {
                     }
                 </div>
             </div>
-            <Link href={"/allrecipes"}><a className={styles.sub_title}>Все рецепты...</a></Link>
+            <Link href={"/allrecipes"} passHref><p className={styles.sub_title}>Все рецепты...</p></Link>
             <Footer/>
         </Fragment>
 

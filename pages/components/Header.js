@@ -22,7 +22,7 @@ function Header(props) {
         <Fragment>
             <div className={css.header}>
                 {/* <NavLink to="/main"  style={{ cursor: 'pointer'}}  id="main"><div className={css.logo} /></NavLink> */}
-                <Link href="/" style={{ cursor: 'pointer'}} id="main"><div className={css.logo}/></Link>
+                <Link href="/" style={{ cursor: 'pointer'}} id="main" passHref><div className={css.logo}/></Link>
                 <form className={css.search_form} action="#">
                     <input className={css.search_button} type="submit" defaultValue />
                     <input className={css.search} type="search" placeholder="Название блюда или ингредиента..." />
