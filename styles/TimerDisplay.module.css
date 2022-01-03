@@ -10,22 +10,6 @@
     left: 0;
 }
 
-.authorization_lightbox
-{
-    /*position: fixed;*/
-    width: 700px;
-    height: 396px;
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*margin-right: -50%;*/
-    /*transform: translate(-50%, -50%);*/
-    background: #FFFFFF;
-    border-radius: 15px;
-    z-index: 12;
-    text-align: center;
-    padding-top: 1px;
-}
-
 .background_block
 {    top: 35%;
     left: 50%;
@@ -41,6 +25,22 @@
     background: #CFD3A0;
     border-radius: 15px;
     padding-top: 10px;
+}
+
+.authorization_lightbox
+{
+    /*position: fixed;*/
+    width: 700px;
+    height: 396px;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*margin-right: -50%;*/
+    /*transform: translate(-50%, -50%);*/
+    background: #FFFFFF;
+    border-radius: 15px;
+    z-index: 12;
+    text-align: center;
+    padding-top: 1px;
 }
 
 .title {
@@ -66,7 +66,6 @@
 /*}*/
 .close:hover {
     opacity: 1;
-    cursor: pointer;
 }
 .close:before, .close:after {
     position: absolute;
@@ -84,59 +83,26 @@
     transform: rotate(-45deg);
 }
 
-.text
+.button
 {
-    width: 564px;
-    height: 103px;
+    width: 324px;
+    height: 60px;
+    background: #CFD3A0;
+    border-radius: 10px;
     font-family: Arsenal;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 38px;
+    align-items: center;
+    text-align: center;
     letter-spacing: -0.017em;
-text-align: left;
-margin: 10px auto 0 auto;
-    color: #262435;
-}
-
-.star
-{
+    color: #FFFFFF;
+    border-width: 0;
     cursor: pointer;
-    display: inline-block;
-    margin: 20px auto 0 auto;
 }
 
-
-.d14 {
-    margin: 50px 0;
-    height: 0;
-    width: 0;
-    position: relative;
-    border-right: 50px solid transparent;
-    border-bottom: 35px solid #E7337A;
-    border-left: 50px solid transparent;
-    transform: rotate(35deg);
-}
-.d14:before,
-.d14:after {
-    content: "";
-    height: 0;
-    width: 0;
-    position: absolute;
-}
-.d14:before {
-    top: -26px;
-    left: -32px;
-    border-bottom: 40px solid #E7337A;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    transform: rotate(-35deg);
-}
-.d14:after {
-    top: 2px;
-    left: -53px;
-    border-right: 50px solid transparent;
-    border-bottom: 35px solid #E7337A;
-    border-left: 50px solid transparent;
-    transform: rotate(-70deg);
+.close:hover {
+    opacity: 1;
+    cursor: pointer;
 }

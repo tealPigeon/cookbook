@@ -10,7 +10,7 @@ const Menu =()=>
         <div className={css.menu__content}>
                 <ul className={css.menu__list}>
                     <li className={css.menu__item}><Link href="/favourites">Избранное</Link></li>
-                    {/*<li className={css.menu__item}><Link href="/cooking">Готовится</Link></li>*/}
+                    <li className={css.menu__item}>Таймер</li>
                     <li className={css.menu__item}><Link href="/shopping">Список покупок</Link></li>
                     <li className={css.menu__item}><Link href="/accountsettings">Настройки аккаунта</Link></li>
                     <li className={css.menu__item}><Link href="/favourites">Выход</Link></li>

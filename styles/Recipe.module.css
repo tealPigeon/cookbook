@@ -81,7 +81,7 @@
     right: 0;
     top: 270px;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0 0 15px;
     z-index: 2;
     text-align: center;
     vertical-align: middle;
@@ -112,7 +112,7 @@
     display:flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .add_to_favorites
@@ -255,7 +255,7 @@ ul.leaders span + span {
     right: 0;
     top: 60%;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0 0 15px;
     z-index: 5;
     text-align: center;
     vertical-align: middle;
