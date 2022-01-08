@@ -1,29 +1,13 @@
-import Footer from "../public/components/Footer";
-import Header from "../public/components/Header";
-import Recipe from "./recipe";
+import Footer from "/public/components/Footer";
+import Header from "/public/components/Header";
 import React,{Fragment} from 'react';
-import css from '../styles/allrecipes.module.css'
-import Article from "../public/components/Article";
-import PopularDishes from "/public/data/PopularDishes"
-import Content from "../public/components/Content";
+import css from '/styles/tag.module.css'
+import SoupsData from "/public/data/SoupsData"
+import Content from "/public/components/Content";
 import TagsData from "/public/data/TagsData.json"
 
-export const getStaticProps = async () =>
-{
-    const dishes = await fetch("http://13.38.23.154:8000/api/preview", {
-        method: "GET",
-    });
 
-    const dishesData = await dishes.json();
-    return {
-        props: {dishes:dishesData}
-
-    }
-}
-
-
-function Allrecipe({dishes}) {
-    console.log(dishes)
+function Tag(props) {
     return (
         <Fragment>
             <Header/>
@@ -31,8 +15,7 @@ function Allrecipe({dishes}) {
             <div className={css.tags}>
                 {
                     TagsData.map((el)=>{
-                        return <div key={el.id} className={css.tag}><input type="radio" checked className={css.tag_radio}/>{el.title}</div>
-
+                        return el.title === "Супы" ? <div key={el.id} className={css.tag}><input type="radio" checked  className={css.tag_radio}/>{el.title}</div>: <div key={el.id} className={css.tag}><input type="radio" className={css.tag_radio}/>{el.title}</div>
                     })
                 }
                 {/*<div className={css.tag}><input type="radio" className={css.tag_radio}/>Супы</div>*/}
@@ -43,10 +26,10 @@ function Allrecipe({dishes}) {
                 {/*<div className={css.tag}><input type="radio" className={css.tag_radio}/>Салаты</div>*/}
                 {/*<div className={css.tag}><input type="radio" className={css.tag_radio}/>Новый год</div>*/}
             </div>
-            <Content title={"Все рецепты"} data={dishes}/>
+            <Content title={"Рецепты в категории “Супы”"} data={SoupsData}/>
             <Footer/>
         </Fragment>
     );
 }
 
-export default Allrecipe;
+export default Tag;

@@ -7,10 +7,8 @@ import Menu from "./Menu";
 import Authorization from "./Authorization";
 
 
-
 function Header(props) {
     // const [modalActive, setModalActive] = useState(true);
-
     let menuIsOpen = false;
     let authorization = false;
 

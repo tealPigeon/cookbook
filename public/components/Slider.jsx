@@ -6,6 +6,14 @@ import Slide from "./Slide";
 import TagsData from "/public/data/TagsData.json"
 
 export default class SwipeToSlide extends Component {
+  constructor(props) {
+    super(props);
+    this.props=props
+    // console.log(props)
+  }
+
+
+
   render() {
     const settings = {
       className: "center",
@@ -20,13 +28,17 @@ export default class SwipeToSlide extends Component {
         );
       }
     };
+
     return (
       <div>
+        {  console.log(this.props)}
         <Slider {...settings}>
             {
-              TagsData.map((tag) => {
-            return <Slide key={tag.id} link={tag.link} text={tag.title} image={tag.image}/>
-                })
+              this.props.data.map((tag) => {
+            // return <Slide key={tag.id} link={tag.link} text={tag.name} image={tag.image}/>
+                return <Slide key={tag.id} link={'/'} text={tag.name} image={'http://13.38.23.154:8000'+tag.web_image}/>
+
+              })
             }
         </Slider>
           <Link href="/all_categories" passHref><a style={{ cursor: 'pointer'}}  id="allcategories" className={"sub_title"}>Все категории...</a></Link>

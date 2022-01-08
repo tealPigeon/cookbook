@@ -4,17 +4,34 @@ import ReactStars from "react-rating-stars-component";
 import Image from 'next/image';
 import Footer from "../../public/components/Footer";
 import Header from "../../public/components/Header";
-import RecipesData from "/public/data/RecipesData.json"
+// import RecipesData from "/public/data/RecipesData.json"
 import RateDish from "../../public/components/RateDish";
 
+export const getServerSideProps = async (context) =>
+{
+    // console.log(context.params.id)
+    const {id}=context.params;
+    // const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
+    const response = await fetch(`http://13.38.23.154:8000/api/dish/${id}`);
 
+    const data = await response.json();
+    if (!data) {
+        return {
+            notFound: true,
+        }
+    }
+
+    return {
+        props: { contact: data },
+    }
+}
 
 function Recipe(props) {
 
     const firstExample = {
         size: 34,
-        value: RecipesData.rating,
-        func: ()=>{console.log(`Example 4: new value is ${RecipesData.rating}`);},
+        value: props.contact.rating,
+        func: ()=>{console.log(`Example 4: new value is ${props.contact.rating}`);},
         edit: false,
         isHalf: true,
         // color: "#ffd700",
@@ -24,8 +41,9 @@ function Recipe(props) {
         activeColor: "#ffd700",
     };
     let rateDishIsOpen = false;
-
+console.log(props);
     const [showRateDish, setRateDish] = React.useState(rateDishIsOpen)
+    // let names = props.contact.ingredients_name.split(", ")
 
     let i=0;
 
@@ -33,18 +51,20 @@ function Recipe(props) {
         <div className="App">
             <Header/>
             <div className={css.content}>
-                <div className={css.title}>{RecipesData.title}</div>
+                <div className={css.title}>{props.contact.name}</div>
                 <div  onClick={() => {rateDishIsOpen=!rateDishIsOpen; setRateDish(rateDishIsOpen)} }>
                     <ReactStars {...firstExample} className={css.stars}/>
                 </div>
-                <p className={css.rating_title}>{RecipesData.rating} ({RecipesData.number_of_reviews})</p>
+                <p className={css.rating_title}>{props.contact.rating} ({props.contact.vote})</p>
                 <div className={css.description}>
-                    <div className={css.image} style={{backgroundImage:'url("'+RecipesData.image+'")'}}>
+
+                    {/*<div className={css.image} style={{backgroundImage:'url("http://13.38.23.154:8000/api/dish/web_image")'}}>*/}
+                    <div className={css.image} style={{backgroundImage:'url("http://13.38.23.154:8000'+ props.contact.web_image+'")'}}>
                         <div className={css.calories}>
-                            <h3 className={css.calories_count}>{RecipesData.kilocalories}</h3>
+                            <h3 className={css.calories_count}>{props.contact.calorie}</h3>
                         </div>
                     </div>
-                    <div className={css.short_description}>{RecipesData.description}
+                    <div className={css.short_description}>{props.contact.description}
                         <div className={css.start_cooking}>
                             <div className={css.logo_text}>Добавить ингредиенты <br/> в список покупок</div>
                             <Image className={css.logo_image} src={require( "/public/logo_shopping.svg")} alt="me" width="40px" height="40px" />
@@ -68,10 +88,13 @@ function Recipe(props) {
                         </div>
                         <ul className={css.leaders}>
                             {
-                                RecipesData.ingredients.map((ingredient, index) =>{
-                                    return <li key={ingredient.name}><span>
+                                // console.log(names)
+                                props.contact.ingredients_name.split(", ").map((ingredient, index) =>{
+                                    return <li key={props.contact.id}><span>
                                         {/*<input type="checkbox"></input>*/}
-                                        {ingredient.name}</span> <span>{ingredient.value}</span></li>
+                                        {ingredient}</span>
+                                        <span>{props.contact.ingredients_number.split(", ")[index]}</span>
+                                    </li>
                                 })
                             }
                         </ul>
@@ -85,31 +108,15 @@ function Recipe(props) {
                     <div className={css.sub_title}>Готовка</div>
 
                     <div className={css}>
-                        {RecipesData.steps_with_images!=null ?  (
-                            RecipesData.steps_with_images.map((step) =>
-                                <div key={step.id} className={css.step}>
-                                    <div className={css.step_image} style={{backgroundImage:'url("'+step.image+'")'}}>
-                                        <div className={css.step_count}>
-                                            <p>Шаг {i+1}</p>
-                                        </div>
-                                    </div>
-                                    <div className={css.step_description}>{step.description}
-                                    </div>
-                                    {console.log(i++)}
-                                </div>
-                            )
-                        ): null }
-
-
 
                         <div className={css.short_recipe}>
                             <ol>
-                                <li>Приготовьте манговый слой. Сложите в чашу блендера два замороженных банана, манго, очищенные дольки апельсина и добавьте сахар. Взбейте до однородности. Разлейте по бокалам для подачи, заполняя их наполовину.
-                                    Если смузи получается слишком густым, порциями добавьте апельсиновый сок, чтобы добиться желаемой консистенции.
-                                </li>
-                                <li> Приготовьте ягодный слой. В вымытую чашу блендера сложите один замороженный банан, охлажденную чернику, ежевику, йогурт. Добавьте сахар. Взбейте до однородности. Аккуратно вылейте в емкости для подачи поверх мангового слоя.Если смузи получается слишком густым, порциями добавляйте молоко, чтобы добиться желаемой консистенции.
-                                </li>
-                                <li>Украсьте ягодами и мятой. Подавайте смузи охлажденным.</li>
+                                {
+                                    props.contact.recipe.split('\n').map((ingredient)=>
+                                    {
+                                        return <li key={props.contact.id}>{ingredient}</li>
+                                    })
+                                }
                             </ol>
                         </div>
                         {/*<button className={css.start_cooking_button}>Начать готовку!</button>*/}

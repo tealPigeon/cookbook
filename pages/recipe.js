@@ -9,8 +9,6 @@ import RateDish from "../public/components/RateDish";
 import Authorization from "../public/components/Authorization";
 
 
-
-
 function Recipe(props) {
 
     const firstExample = {
@@ -27,7 +25,7 @@ function Recipe(props) {
     };
     let rateDishIsOpen = false;
     const [showRateDish, setRateDish] = React.useState(rateDishIsOpen)
-
+     
     let i=0;
 
     return (
