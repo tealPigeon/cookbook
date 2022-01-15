@@ -16,6 +16,7 @@
   height: 73px !important;
   width: 270px !important;
   background-size:100% 100%;
+  cursor: pointer;
 }
 
 .profile
@@ -27,6 +28,7 @@
   float: left;
   display: block;
   align-self: center;
+  cursor: pointer;
 }
 
 .enter

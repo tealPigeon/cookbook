@@ -4,8 +4,10 @@ import React,{Fragment, useState} from 'react';
 // import {NavLink} from "react-router-dom";
 import Link from "next/link"
 import Menu from "./Menu";
+// import Authorization from "./Authorization";
+// import A from './A'
 import Authorization from "./Authorization";
-
+import {parseCookies} from "nookies";
 
 function Header(props) {
     // const [modalActive, setModalActive] = useState(true);
@@ -15,7 +17,11 @@ function Header(props) {
     const [showMenu, setMenu] = useState(menuIsOpen)
     const [showAuthorization, setAuthorization] = useState(authorization)
 
-    let name = props.name;
+    const cookies = parseCookies()
+    // console.log(cookies.fromClient)
+
+
+    // let name = props.name;
     return (
         <Fragment>
             <div className={css.header}>
@@ -25,10 +31,14 @@ function Header(props) {
                     <input className={css.search_button} type="submit" defaultValue />
                     <input className={css.search} type="search" placeholder="Название блюда или ингредиента..." />
                 </form>
-                <div className={css.box}>
-                    <a style={{ cursor: 'pointer'}}  id="enter" className={css.enter} onClick={() => {authorization=!authorization; setAuthorization(authorization)} }>Войти</a>
 
-                    <div className={css.profile} onClick={() => {menuIsOpen=!menuIsOpen; setMenu(menuIsOpen); name="Антон"} }/>
+
+                <div className={css.box}>
+
+                    {
+                        cookies.fromClient ? <div className={css.profile} onClick={() => {menuIsOpen=!menuIsOpen; setMenu(menuIsOpen);} }/>:<a style={{ cursor: 'pointer'}}  id="enter" className={css.enter} onClick={() => {authorization=!authorization; setAuthorization(authorization)} }>Войти</a>
+                    }
+
 
                 </div>
 
@@ -38,7 +48,7 @@ function Header(props) {
             }
 
             {
-                showAuthorization ? authorization=!authorization && <Authorization isOpen={true}/>: null
+                showAuthorization ? authorization=!authorization && <Authorization/>: null
             }
 
         </Fragment>

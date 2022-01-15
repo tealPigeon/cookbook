@@ -3,7 +3,6 @@
     margin: 100px auto 0 auto;
     width: 1260px;
     height: 1320px;
-    /*background-color: #61dafb;*/
 }
 .content_title
 {
@@ -36,6 +35,7 @@
     color: #262435;
     text-align:left;
     position: relative;
+    cursor: pointer;
 }
 
 .wrapper_article

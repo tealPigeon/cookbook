@@ -37,6 +37,7 @@
     text-align:left;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .wrapper_article
@@ -97,7 +98,7 @@ height: 80%;
    position: absolute;
     top:0;
     right: 0;
-
+cursor: pointer;
 }
 
 .star
@@ -129,13 +130,14 @@ height: 80%;
     /*border: 2px solid #DBDBD6;*/
     /*transform: rotate(90deg);*/
     z-index: 5;
+    cursor: pointer;
 }
 .close:hover {
     opacity: 1;
 }
 .close:before, .close:after {
     position: absolute;
-    top:0 px;
+    top:0px;
     right: 0px;
     content: ' ';
     height: 29px;
@@ -148,4 +150,5 @@ height: 80%;
 .close:after {
     transform: rotate(-45deg);
 }
+
 

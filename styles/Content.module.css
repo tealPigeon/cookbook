@@ -90,3 +90,20 @@ height: 80%;
     top: 0;
     right: 0;
 }
+
+
+.void
+{
+    text-align: center;
+    width: 1260px;
+    height: 300px;
+    /*min-height: 10em;*/
+    /*display: flex;*/
+    /*align-items: center*/
+    padding-top: 150px;
+
+    font-size: 30px;
+    line-height: 44px;
+
+    color: #514F64;
+}

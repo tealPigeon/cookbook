@@ -61,6 +61,7 @@
     height: 15px;
     top:23px;
     right: 23px;
+    cursor: pointer;
     /* Colors/Arroy */
 
     /*border: 2px solid #DBDBD6;*/
@@ -99,25 +100,20 @@
     /*position: absolute;*/
     width: 426px;
     height: 62px;
-
     /* Colors/Gray */
-
     border: 2px solid #7E7C8F;
     box-sizing: border-box;
     border-radius: 10px;
-
     font-family: Arsenal;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
     /* identical to box height */
-
     letter-spacing: -0.017em;
-
     /* Colors/Arroy */
-display: block;
-    color: #DBDBD6;
+    display: block;
+    color: black;
     padding: 18px;
     margin: 20px auto 0 auto;
 }
@@ -134,7 +130,7 @@ display: block;
     border: 2px solid #7E7C8F;
     box-sizing: border-box;
     border-radius: 10px;
-
+    color: black;
     font-family: Arsenal;
     font-style: normal;
     font-weight: normal;
@@ -220,12 +216,9 @@ display: block;
     font-size: 18px;
     line-height: 23px;
     /* identical to box height */
-
     text-align: center;
     letter-spacing: -0.017em;
-
     /* Colors/Red */
-
     color: #E25858;
 }
 

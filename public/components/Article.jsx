@@ -7,7 +7,7 @@ const Article = (props) =>{
 
     const firstExample = {
         size: 34,
-        value: props.rating,
+        value: Number(props.rating),
         edit: false,
         isHalf: true,
         // color: "#ffd700",
@@ -18,8 +18,7 @@ const Article = (props) =>{
     };
 
     return (
-        // <Link href={props.href} passHref>
-        <Link href={`/recipes/${props.id}`} passHref>
+        <Link href={`/recipes/${props.dish}`} passHref>
             <div className={css.article}>
                     <div className={css.image}  style={{backgroundImage:'url("http://13.38.23.154:8000'+ props.web_image+'")'}}></div>
                     <div className={css.wrapper_article}>

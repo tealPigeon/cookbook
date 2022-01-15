@@ -36,7 +36,7 @@ export default class SwipeToSlide extends Component {
             {
               this.props.data.map((tag) => {
             // return <Slide key={tag.id} link={tag.link} text={tag.name} image={tag.image}/>
-                return <Slide key={tag.id} link={'/'} text={tag.name} image={'http://13.38.23.154:8000'+tag.web_image}/>
+                return <Slide id={tag.id} key={tag.id} text={tag.name} image={'http://13.38.23.154:8000'+tag.web_image}/>
 
               })
             }

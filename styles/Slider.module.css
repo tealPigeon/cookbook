@@ -86,18 +86,20 @@ padding-right: 20px; */
     height: 50px;
     font-size: 0;
     border: 0px;
-    
+    cursor: pointer;
 }
 /* .slider
 {position: relative;} */
 /* Стрелка влево */
 .slick-arrow.slick-prev{
+    cursor: pointer;
     left: 0;
     background: url(../public/left_arrow.svg) 0 0 / 100% no-repeat;
 
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next{
+    cursor: pointer;
     right: 0;
     background: url(../public/right_arrow.svg) 0 0 / 100% no-repeat;
 

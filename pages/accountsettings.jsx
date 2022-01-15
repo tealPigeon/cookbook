@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 function Accountsettings()
 {
-    const img1="https://memepedia.ru/wp-content/uploads/2020/10/screenshot_11-3.png"
     return(
         <Fragment>
             <Header/>

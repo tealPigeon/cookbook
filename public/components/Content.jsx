@@ -4,7 +4,7 @@ import Article from "./Article";
 import PopularDishes from "/public/data/PopularDishes"
 
 const Content = (props) =>{
-
+console.log(props)
     return (
             <div className={css.content}>
             <p className={css.content_title}>{props.title}</p>
